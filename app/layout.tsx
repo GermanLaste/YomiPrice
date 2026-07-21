@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+// app/layout.tsx
+import { Toaster } from '@/components/ui/sonner'
+// ...dentro del <body>, antes de cerrar:
+<Toaster />
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
