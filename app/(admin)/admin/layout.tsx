@@ -16,10 +16,11 @@ export default async function AdminLayout({ children }: { children: React.ReactN
       <header className="border-b">
         <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
           <nav className="flex gap-4 text-sm">
-            <Link href="/admin">Obras</Link>
-            <Link href="/admin/stores">Tiendas</Link>
-            <Link href="/admin/genres">Géneros</Link>
-          </nav>
+  <Link href="/admin">Importar</Link>
+  <Link href="/admin/works">Obras</Link>
+  <Link href="/admin/stores">Tiendas</Link>
+  <Link href="/admin/genres">Géneros</Link>
+</nav>
           <form action={signOut}>
             <Button type="submit" variant="ghost" size="sm">Salir</Button>
           </form>
